@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from qrcode import ERROR_CORRECT_L, ERROR_CORRECT_M, ERROR_CORRECT_Q, ERROR_CORRECT_H
+from qrcode.constants import ERROR_CORRECT_L, ERROR_CORRECT_M, ERROR_CORRECT_Q, ERROR_CORRECT_H
 
 from qr_code.qrcode.image import SVG_FORMAT_NAME
 
