@@ -33,8 +33,8 @@ def make_qr_code_image(text, image_factory, qr_code_options=QRCodeOptions()):
     valid_version = _get_valid_version_or_none(qr_code_options.version)
     valid_size = _get_valid_size_or_default(qr_code_options.size)
     valid_error_correction = _get_valid_error_correction_or_default(qr_code_options.error_correction)
-    import qrcode
-    qr = qrcode.QRCode(
+    from qrcode.main import QRCode
+    qr = QRCode(
         version=valid_version,
         error_correction=valid_error_correction,
         box_size=valid_size,
